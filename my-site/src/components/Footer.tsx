@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -8,46 +8,34 @@ const Footer = () => {
         <div className="text-2xl font-bold mb-4">
           Y<span className="text-primary">Dhruv</span>
         </div>
-        
+
         <div className="flex justify-center space-x-8 my-6">
           {['Home', 'Skills', 'Education', 'Contact'].map((item) => (
-            <a 
+            <a
               key={item}
-              href={`#${item.toLowerCase()}`} 
+              href={`#${item.toLowerCase()}`}
               className="font-medium hover:text-primary transition-colors"
             >
               {item}
             </a>
           ))}
         </div>
-        
+
         <div className="flex justify-center space-x-4 my-6">
-          <a 
-            href="#" 
+          <a
+            href="https://github.com/dhruv56711"
             className="w-10 h-10 rounded-full bg-white bg-opacity-10 flex items-center justify-center hover:bg-primary transition-colors"
           >
             <FaGithub />
           </a>
-          <a 
-            href="#" 
+          <a
+            href="https://linkedin.com/in/dhruv-yadav-15yd"
             className="w-10 h-10 rounded-full bg-white bg-opacity-10 flex items-center justify-center hover:bg-primary transition-colors"
           >
             <FaLinkedin />
           </a>
-          {/* <a 
-            href="#" 
-            className="w-10 h-10 rounded-full bg-white bg-opacity-10 flex items-center justify-center hover:bg-primary transition-colors"
-          >
-            <FaTwitter />
-          </a> */}
-          {/* <a 
-            href="#" 
-            className="w-10 h-10 rounded-full bg-white bg-opacity-10 flex items-center justify-center hover:bg-primary transition-colors"
-          >
-            <FaInstagram />
-          </a> */}
         </div>
-        
+
         <p className="text-gray text-sm">
           © {new Date().getFullYear()} Dhruv Yadav. All rights reserved.
         </p>
