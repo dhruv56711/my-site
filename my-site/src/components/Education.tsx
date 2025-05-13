@@ -4,7 +4,7 @@ import { FaGraduationCap, FaBriefcase } from 'react-icons/fa';
 const timelineItems = [
   {
     icon: <FaGraduationCap className="text-white text-xl" />,
-    date: "2022 - Present",
+    date: "2024 - Present",
     title: "Diploma in Computer Programming",
     subtitle: "Sheridan College",
     content:
